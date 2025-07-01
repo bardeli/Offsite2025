@@ -1,7 +1,6 @@
 <html>
     <head>
         <title>DeTOx</title>
-        <meta charset="utf-8">
     </head>
     <script>
         function trans(txt)
@@ -35,9 +34,10 @@
             var ans = document.getElementById("flamingo").value;
             var ans_field = document.getElementById("ans");
 
-            if (ans==Math.floor(30*(Math.PI-0.02)-90))
+            if (ans==trans("25HT"))
             {
-                ans_field.innerHTML = "<b>" + trans("Jshfoexbt!nju!Ufdiojl") + "</b>";
+                ans_field.innerHTML = "<b>" + trans("Tdixbs{ft!Xbttfs!bvg!efs!Cbol-!lmjohu!gýs!njdi!eboo!epdi!{v!lsbol-!wjfmmfjdiu!jtu!ejf!Cbol!bn!Xbttfs!voe!tubuu!esbvg!jtu!xbt!wjfm!lsbttfs@!)62/7:74871958333-!7/691936493586187*") + "</b>";
+                document.getElementById("ansurl").innerHTML = "<img width='450' src='fork.png'/>";
             }
             else
             {
@@ -48,10 +48,10 @@
     </script>
     <body>
         <img src="DeTOx.png" width="400"/><br>
-        Ganz schön strenge AGB!<br>
-        Aber haben die Kollegen in der Homebase auch die richtigen Artikel gefunden?<br>
-        Welche Artikel sind es? (Schön in der richtigen Reihenfolge.)<br>
-        <input id="flamingo" type="text"/><button onclick="flamingo()">Weiter!</button>
+        <br>
+        <b>Finde die 7 Produkte im Suchsel.</b>
+        <br>
+        Welche vier Zeichen haben sie gemeinsam? (Lexikographisch, Ziffern vor Buchstaben) <input id="flamingo" type="text"/><button onclick="flamingo()">?</button>
         <div id="ans" style="padding-top:30px;"></div>
         <div id="ansurl"></div>
     </body>
