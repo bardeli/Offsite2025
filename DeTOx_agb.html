@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>DeToX</title>
+        <meta charset="utf-8">
+    </head>
+    <script>
+        function trans(txt)
+        {
+            var res = "";
+
+            for (var i=0; i<txt.length; ++i)
+            {
+                var ch = txt.charCodeAt(i)-1;
+                res += String.fromCharCode(ch);
+            }
+
+            return res;
+        }
+
+        function transf(txt)
+        {
+            var res = "";
+
+            for (var i=0; i<txt.length; ++i)
+            {
+                var ch = txt.charCodeAt(i)+1;
+                res += String.fromCharCode(ch);
+            }
+
+            return res;
+        }
+
+        function flamingo()
+        {
+            var ans = document.getElementById("flamingo").value;
+            var ans_field = document.getElementById("ans");
+
+            if (ans==Math.floor(30*(Math.PI-0.02)-90))
+            {
+                ans_field.innerHTML = "<b>" + trans("Jshfoexbt!nju!Ufdiojl") + "</b>";
+            }
+            else
+            {
+                ans_field.innerHTML = "<b>Warnung! KI-Nutzer detektiert!</b>";
+                document.getElementById("ansurl").innerHTML = "";
+            }
+        }
+    </script>
+    <body>
+        <img src="DeTOx.png" width="400"/><br>
+        Ganz schön strenge AGB!<br>
+        Aber haben die Kollegen in der Homebase auch die richtigen Artikel gefunden?<br>
+        Welche Artikel sind es? (Schön in der richtigen Reihenfolge.)<br>
+        <input id="flamingo" type="text"/><button onclick="flamingo()">Weiter!</button>
+        <div id="ans" style="padding-top:30px;"></div>
+        <div id="ansurl"></div>
+    </body>
+</html>
