@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>DeToX</title>
+    </head>
+    <script>
+        function trans(txt)
+        {
+            var res = "";
+
+            for (var i=0; i<txt.length; ++i)
+            {
+                var ch = txt.charCodeAt(i)-1;
+                res += String.fromCharCode(ch);
+            }
+
+            return res;
+        }
+
+        function transf(txt)
+        {
+            var res = "";
+
+            for (var i=0; i<txt.length; ++i)
+            {
+                var ch = txt.charCodeAt(i)+1;
+                res += String.fromCharCode(ch);
+            }
+
+            return res;
+        }
+
+        function flamingo()
+        {
+            var ans = document.getElementById("flamingo").value;
+            var ans_field = document.getElementById("ans");
+
+            if (ans==trans("579"))
+            {
+                ans_field.innerHTML = "<b>" + trans("Tdixbs{ft!Xbttfs!bvg!efs!Cbol-!lmjohu!gýs!njdi!eboo!epdi!{v!lsbol-!wjfmmfjdiu!jtu!ejf!Cbol!bn!Xbttfs!voe!tubuu!esbvg!jtu!xbt!wjfm!lsbttfs@!)62/7:74871958333-!7/691936493586187*") + "</b>";
+                document.getElementById("ansurl").innerHTML = "<img width='450' src='bank.png'/>";
+            }
+            else
+            {
+                ans_field.innerHTML = "<b>Warnung! KI-Nutzer detektiert!</b>";
+                document.getElementById("ansurl").innerHTML = "";
+            }
+        }
+    </script>
+    <body>
+        <img src="DeTOx.png" width="400"/><br>
+        <svg width="450" height="170">
+            <rect x="10" y="10" width="100" height="100" style="stroke:black;stroke-width:2; fill:none;"/>
+            <text x="13" y="25">?</text>
+            <text x="57" y="65">1</text>
+
+            <line x1="200" y1="10" x2="150" y2="97" style="stroke:black;stroke-width:2" />
+            <line x1="200" y1="10" x2="250" y2="97" style="stroke:black;stroke-width:2" />
+            <line x1="150" y1="97" x2="250" y2="97" style="stroke:black;stroke-width:2" />
+            <text x="197" y="35">?</text>
+            <text x="197" y="65">2</text>
+
+            <line x1="300" y1="10" x2="400" y2="10" style="stroke:black;stroke-width:2" />
+            <line x1="300" y1="10" x2="300" y2="110" style="stroke:black;stroke-width:2" />
+            <line x1="300" y1="110" x2="400" y2="10" style="stroke:black;stroke-width:2" />
+            <text x="377" y="25">?</text>
+            <text x="317" y="65">3</text>
+        </svg>
+        <br>
+        <b>Wieviele Fragezeichen?</b>
+        <br>
+        Drei Ziffern! <input id="flamingo" type="text"/><button onclick="flamingo()">?</button>
+        <div id="ans" style="padding-top:30px;"></div>
+        <div id="ansurl"></div>
+    </body>
+</html>
