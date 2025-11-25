@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>Christmas Space Mission 2025</title>
+</head>
+
+<body>
+    <script>
+        var extended_unit = "ble";
+        var total_sum = 0;
+
+        function toggle_text(which)
+        {
+            var token = document.getElementById(which);
+            
+            if (token.style.visibility == "hidden")
+            {
+                token.style.visibility = "visible";
+                total_sum += parseInt(which.substring(1));
+            }
+            else
+            {
+                token.style.visibility = "hidden";
+                total_sum -= parseInt(which.substring(1));
+            }
+
+            if (total_sum == 20)
+                do_the_bartman();
+        }
+
+
+        function do_the_bartman()
+        {
+            var base_unit = "abcdefghijklmnopqrstuvwxyz";
+
+            var marge = base_unit.charAt(2) + base_unit.charAt(2);
+            var marge_hair = document.getElementById(marge).style;
+
+            var lisa = base_unit.charAt(2) + base_unit.charAt(16);
+            var lisa_dress = document.getElementById(lisa).style;
+
+            marge_hair.visibility = base_unit.charAt(21) + "isi" + extended_unit;
+            lisa_dress.visibility = base_unit.charAt(21) + "isi" + extended_unit;
+        }
+        </script>
+
+    <img src="space_mission.png" width:100% usemap="#spacemap" style="position:absolute; left: 0px; top: 0px;">
+    <div id="w1" onclick="toggle_text('w1')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 64; position:absolute; left: 386px; top: 22px;">pace</div>
+    <div id="w2" onclick="toggle_text('w2')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 64; position:absolute; left: 42px; top: 22px;">Christmas</div>
+    <div id="w7" onclick="toggle_text('w7')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 64; position:absolute; left: 346px; top: 22px;">S</div>
+    <div id="w-1" onclick="toggle_text('w-1')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 28; position:absolute; left: 78px; top: 568px;">Prospective</div>
+    <div id="w-2" onclick="toggle_text('w-2')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 28; position:absolute; left: 234px; top: 568px;">astronauts</div>
+    <div id="w-7" onclick="toggle_text('w-7')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 28; position:absolute; left: 374px; top: 568px;">are</div>
+    <div id="cc" onclick="toggle_text('w-3')"
+    style="visibility: hidden; color: #000; font-family: sans-serif; font-size: 16; position:absolute; left:310px; top:430px;"><img src="gl.png">乔戈里峰<img src="x.png" width="150px"><br>Hier geht es hoch hinaus: ?611m<br>und es ist auch das nächste <a href="__1.html">Ziel!</a></div>
+    <div id="w5" onclick="toggle_text('w5')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 28; position:absolute; left: 712px; top: 568px;">hall</div>
+    <div id="w3" onclick="toggle_text('w3')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 64; position:absolute; left: 539px; top: 22px;">Mission</div>
+    <div id="w17" onclick="toggle_text('w17')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 28; position:absolute; left: 364px; top: 638px;">Join</div>
+    <div id="w19" onclick="toggle_text('w19')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 28; position:absolute; left: 420px; top: 638px;">the</div>
+    <div id="w4" onclick="toggle_text('w4')"
+    style="visibility: hidden; color: #7B5; font-family: sans-serif; font-size: 28; position:absolute; left: 469px; top: 638px;">line</div>
+    <div id="cq" style="visibility: hidden; position:absolute; left:512px; top:447px;">?</div>
+
+    <map name="spacemap">
+        <area shape="rect" coords="390,48,524,100" onclick="toggle_text('w1')"/>
+        <area shape="rect" coords="42,48,329,100" onclick="toggle_text('w2')"/>
+        <area shape="rect" coords="542,48,755,100" onclick="toggle_text('w3')"/>
+        <area shape="rect" coords="348,35,382,81" onclick="toggle_text('w7')"/>
+        <area shape="rect" coords="80,570,224,590" onclick="toggle_text('w-1')"/>
+        <area shape="rect" coords="232,570,365,590" onclick="toggle_text('w-2')"/>
+        <area shape="rect" coords="374,570,417,590" onclick="toggle_text('w-7')"/>
+        <area shape="rect" coords="469,638,515,670" onclick="toggle_text('w4')"/>
+        <area shape="rect" coords="712,570,760,590" onclick="toggle_text('w5')"/>
+        <area shape="rect" coords="364,638,415,670" onclick="toggle_text('w17')"/>
+        <area shape="rect" coords="420,638,460,670" onclick="toggle_text('w19')"/>
+    </map>
+</body>
+
+</html>
